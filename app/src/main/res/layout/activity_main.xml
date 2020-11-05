@@ -1,6 +1,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#A3F7BF"
     android:orientation="vertical">
 
     <EditText
@@ -11,6 +12,9 @@
         android:focusableInTouchMode="true"
         android:hint="@string/enter_value"
         android:inputType="text"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textColorLink="#000000"
         android:visibility="invisible">
 
         <requestFocus />
@@ -21,12 +25,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:background="#435055"
         android:onClick="restartUserProgram"
         android:text="@string/restart"
+        android:textColor="#FFFFFF"
         android:visibility="gone" />
 
     <TextView
         android:id="@+id/consoleWrite"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:background="#29A19C" />
 </LinearLayout>
